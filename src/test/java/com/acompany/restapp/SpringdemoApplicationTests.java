@@ -1,4 +1,4 @@
-package com.acompany.springdemo;
+package com.acompany.restapp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

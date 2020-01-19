@@ -1,4 +1,4 @@
-package com.acompany.springdemo;
+package com.acompany.restapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
