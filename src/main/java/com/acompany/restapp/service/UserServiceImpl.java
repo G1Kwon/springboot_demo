@@ -5,52 +5,42 @@ import com.acompany.restapp.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public interface UserService {
+@Service
+public class UserServiceImpl implements UserService{
 
-/*    @Autowired
+    @Autowired
     private UserRepository userRepository;
 
     public Map<String, String> getMassage() {
-
-         Map <String, String> res = new HashMap<>();
-         res.put("great", "Hello world..");
-
-         return res;
+        return userRepository.getMessage();
     }
 
+    @Override
     public List<User> getUsers() {
         return userRepository.getAllUsers();
     }
 
+    @Override
     public User getUserById(Integer userid) {
         return userRepository.getUserByUserid(userid);
     }
 
+    @Override
     public User registUser(User user) {
         return userRepository.insertUser(user);
     }
 
+    @Override
     public void modifyUser(Integer userid, User user) {
         user.setUserid(userid);
         userRepository.updateUser(user);
     }
 
+    @Override
     public void removeUser(Integer userid) {
         userRepository.deleteUser(userid);
-    }*/
-
-    //UserServiceImpl 분리
-    List<User> getUsers();
-
-    User getUserById(Integer userid);
-
-    User registUser(User user);
-
-    void modifyUser(Integer userid, User user);
-
-    void removeUser(Integer userid);
+    }
 }
