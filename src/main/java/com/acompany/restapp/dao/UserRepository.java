@@ -33,6 +33,8 @@ public class UserRepository {
     public List<User> getAllUsers() {
         System.out.println("사용자 전체보기::Repository..");
 
+        //아래 코드는 Test assert 메소드에 걸린다.
+        //return new ArrayList<>();
         return users;
     }
 
